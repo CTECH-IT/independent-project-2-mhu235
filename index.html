@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Rochester Chamber Music Society</title>
-    <meta name="author" content="Maggie Hu">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Rochester Chamber Music Society</title>
+  <meta name="author" content="Maggie Hu">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
 
 <body>
-  <header>
+  <header class="main-header">
     <h1 class="page-title">Rochester Chamber Music Society</h1>
   </header>
-  <ul>
-    <li>
-      <span>A Violin/Piano recital</span>
-    </li>
-    <li>
-      <span>Music of the Phillipines</span>
-    </li>
-    <li>
-      <span>The Wonder of Christmas</span>
-    </li>
-    <li>
-      <span>Onward</span>
-    </li>
-    <li>
-      <span>Korean Music</span>
-    </li>
-    <li>
-      <span>A Tribute to John Paulson: Jazz at 70</span>
-    </li>
-  </ul>
+  <main class="main-content">
+    <ul class="thumbnail-list">
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/violinpiano.jpg" alt="A Violin/Piano Recital">
+          <span class="thumbnail-title">A Violin/Piano recital</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/philippines.jpg" alt="Music of the Phillipines">
+          <span class="thumbnail-title">Music of the Phillipines</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/christmas.jpg" alt="The Wonder of Christmas">
+          <span class="thumbnail-title">The Wonder of Christmas</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/onward.jpg" alt="Onward">
+          <span class="thumbnail-title">Onward</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/korean.jpeg" alt="Korean Music">
+          <span class="thumbnail-title">Korean Music</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/john.jpg" alt="A Tribute to John Paulson">
+          <span class="thumbnail-title">A Tribute to John Paulson: Jazz at 70</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="detail-image-container">
+      <div class="detail-image-frame">
+        <img class="detail-image" alt="">
+        <span class="detail-image-title"></span>
+      </div>
+    </div>
+  </main>
 
   <script src="scripts/main.js"></script>
 </body>
+
 </html>

@@ -1,1 +1,76 @@
-/* Put your CSS here */
+html, body {
+    height: 100%;
+}
+
+body {
+    background: rgb(149, 194, 215);
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+a[href="#"] {
+    text-decoration: none;
+}
+
+.main-header {
+    flex: 0 1 auto;
+}
+
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-title {
+    background: rgb(96, 125, 139);
+    color: rgb(202, 238, 255);
+    display: block;
+    font-size: 18px;
+    margin: 0;
+    padding: 0.44m, 1em;
+}
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
+}
+
+.thumbnail-item {
+    display: inline-block;
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    width: 120px;
+}
+
+.thumbnail-list {
+    flex: 0 1 auto;
+    list-style: none;
+    order: 2;
+
+    overflow-x: auto;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.detail-image {
+    width: 90%;
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-image-frame {
+    position: relative;
+    text-align: center;
+}
+
+.detail-image-title {
+    color: white;
+    font-size: 40px;
+}
