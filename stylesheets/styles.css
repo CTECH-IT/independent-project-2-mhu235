@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background: rgb(149, 194, 215);
+    background: white;
     display: flex;
     flex-direction: column;
     font-size: 10px;
@@ -13,8 +13,16 @@ a[href="#"] {
     text-decoration: none;
 }
 
+.page-title {
+    font-size: 30px;
+    color: rgb(128,0,0);
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .main-header {
     flex: 0 1 auto;
+    text-align: center;
 }
 
 .main-content {
@@ -23,20 +31,31 @@ a[href="#"] {
     flex-direction: column;
 }
 
+.is-small {
+    transform: scale(0.001);
+    transition: transform 0ms;
+}
+
 .thumbnail-title {
-    background: rgb(96, 125, 139);
-    color: rgb(202, 238, 255);
-    display: inline;
+    background:	rgba(161, 159, 159, 0.4);
+    color:	black;
+    display: block;
+    text-align: center;
     font-size: 18px;
     margin: 0;
-    padding: 0.44m, 1em;
+    padding: 0.4em, 1em;
 }
 
 .thumbnail-item {
     display: inline-block;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
-    width: 200px
+    width: 300px;
+    transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+    transform: scale(1.1);
 }
 
 .thumbnail-list {
@@ -46,7 +65,7 @@ a[href="#"] {
     order: 0;
 
     overflow-x: auto;
-    padding: 0;
+    padding: 10px 0;
     white-space: nowrap;
 }
 
@@ -70,10 +89,12 @@ a[href="#"] {
 .detail-image-frame {
     position: relative;
     text-align: center;
+
+    transition: transform 333ms cubic-bezier(.17,.67,.83,.67);
 }
 
 .detail-image-title {
-    color: white;
+    color: 	rgb(128,0,0);
     font-size: 40px;
 }
 
@@ -89,8 +110,7 @@ a[href="#"] {
 
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
-    margin: 10px
-   
+    margin: 10px 10px 30px 10px;  
 }
 
 .description-frame {

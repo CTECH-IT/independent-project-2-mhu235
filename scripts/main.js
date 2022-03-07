@@ -1,7 +1,9 @@
 const DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
 const DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
 const DETAIL_DESCRIPTION_SELECTOR = '[data-image-role="description"]';
+const DETAIL_FRAME_SELECTOR = '[data-image-role="frame"]';
 const THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
+const SMALL_EFFECT_CLASS = 'is-small';
 
 function setDetails(imageUrl, titleText, descriptionText) {
     'use strict';
@@ -48,7 +50,17 @@ function addThumbClickHandler(thumb) {
     thumb.addEventListener('click', function(event) {
         event.preventDefault();
         setDetailsFromThumb(thumb);
+        showDetails();
     });
+}
+
+function showDetails() {
+    'use strict';
+    let frame = document.querySelector(DETAIL_FRAME_SELECTOR);
+    frame.classList.add(SMALL_EFFECT_CLASS);
+    setTimeout(function() {
+        frame.classList.remove(SMALL_EFFECT_CLASS);
+    }, 50);
 }
 
 function initializeEvents() {
