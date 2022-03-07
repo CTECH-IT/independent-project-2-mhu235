@@ -14,10 +14,11 @@ a[href="#"] {
 }
 
 .page-title {
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(128,0,0);
     text-align: center;
     text-transform: uppercase;
+    font-family: "Marker Felt", fantasy;
 }
 
 .main-header {
@@ -51,6 +52,7 @@ a[href="#"] {
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
     width: 300px;
+    margin: 5px;
     transition: transform 133ms ease-in-out;
 }
 
@@ -95,7 +97,8 @@ a[href="#"] {
 
 .detail-image-title {
     color: 	rgb(128,0,0);
-    font-size: 40px;
+    font-size: 30px;
+    font-family: "Georgia", serif;
 }
 
 .description {
