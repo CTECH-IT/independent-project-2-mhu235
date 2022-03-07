@@ -40,6 +40,7 @@ a[href="#"] {
 }
 
 .thumbnail-list {
+    display: flex;
     flex: 0 1 auto;
     list-style: none;
     order: 0;
@@ -96,6 +97,7 @@ a[href="#"] {
     position: relative;
     text-align: center;
 }
+
 
 
 
